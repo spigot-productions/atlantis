@@ -1,0 +1,29 @@
+name: Atlantis
+prefix: Atlantis
+main: com.github.spigotproductions.atlantis.main.Atlantis
+version: 0.1
+description: Atlantis is a great all-rounder plugin that your server must have!
+api-version: 1.16
+author: https://github.com/spigot-productions/atlantis/issues
+authors: [Hufeisen, Simon_der_Eine]
+website: https://github.com/spigot-productions/atlantis
+softdepend: [PlaceholderAPI]
+depend: []
+loadbefore: []
+
+commands:
+  atlantis:
+    description: The main Command.
+    aliases: []
+    usage: "Usage: /atlantis"
+
+permissions:
+  atlantis.*:
+    description: Grant every permission.
+    default: op
+    children:
+      atlantis.reload: true
+
+  atlantis.reload:
+    description: Grant permission to reload the Plugin.
+    default: op
